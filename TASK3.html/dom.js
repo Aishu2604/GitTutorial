@@ -14,9 +14,16 @@
 //console.log(document.links);
 //console.log(document.images);
 
-var headerTitle = document.getElementById('header-title');
-var header = document.getElementById('main-header');
-header.style.borderBottom = 'solid 5px #000';
+//var headerTitle = document.getElementById('header-title');
+//var header = document.getElementById('main-header');
+//header.style.borderBottom = 'solid 5px #000';
 
-var headerClass = document.getElementById('main');
-headerClass.innerHTML = <h2 style="color: green;"> ADD ITEMS</h2>
+//var headerClass = document.getElementById('main');
+//headerClass.innerHTML = <h2 style="color: green;"> ADD ITEMS</h2>
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+items[2].style.backgroundColor = 'green';
+for(var i = 0;i<items.length;i++){
+    items[i].style.fontWeight = 'bold';
+}
