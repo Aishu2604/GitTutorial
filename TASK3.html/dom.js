@@ -27,9 +27,23 @@
 //for(var i = 0;i<items.length;i++){
 //    items[i].style.fontWeight = 'bold';
 //}
-var li = document.getElementsByTagName('li');
-console.log(li);
-li[2].style.backgroundColor = 'green';
-for(var i = 0;i<li.length;i++){
-    li[i].style.fontWeight = 'bold';
+//var li = document.getElementsByTagName('li');
+//console.log(li);
+//li[2].style.backgroundColor = 'green';
+//for(var i = 0;i<li.length;i++){
+//    li[i].style.fontWeight = 'bold';
+//}
+
+//var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+//secondItem.style.backgroundColor = 'green';
+//var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+//thirdItem.style.color = 'white';
+
+
+//var items = document.querySelectorAll('li:nth-child(2)');
+//items.style.color = 'green';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor = 'green';
 }
